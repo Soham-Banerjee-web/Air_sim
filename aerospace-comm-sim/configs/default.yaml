@@ -1,0 +1,36 @@
+aircraft_count: 10
+aircraft:
+  - id: 1
+    type: commercial
+    speed: 250
+    altitude: 10000
+    position:
+      x: 100
+      y: 200
+  - id: 2
+    type: commercial
+    speed: 300
+    altitude: 12000
+    position:
+      x: 150
+      y: 250
+  - id: 3
+    type: military
+    speed: 400
+    altitude: 15000
+    position:
+      x: 200
+      y: 300
+communication:
+  range: 50
+  protocol: standard
+region:
+  boundaries:
+    north: 500
+    south: 0
+    east: 500
+    west: 0
+  environmental_factors:
+    weather: clear
+    wind_speed: 10
+    turbulence: low

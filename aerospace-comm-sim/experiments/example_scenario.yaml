@@ -1,0 +1,49 @@
+initial_conditions:
+  aircraft:
+    - id: A1
+      type: commercial
+      position:
+        x: 1000
+        y: 2000
+        altitude: 30000
+      speed: 250
+      communication_range: 50
+    - id: A2
+      type: cargo
+      position:
+        x: 1500
+        y: 2500
+        altitude: 25000
+      speed: 200
+      communication_range: 60
+    - id: A3
+      type: military
+      position:
+        x: 1200
+        y: 2200
+        altitude: 35000
+      speed: 300
+      communication_range: 70
+
+simulation_parameters:
+  duration: 3600  # in seconds
+  time_step: 1    # in seconds
+  weather_conditions:
+    visibility: good
+    wind_speed: 10  # in knots
+    turbulence: low
+
+communication_settings:
+  protocol: standard
+  message_interval: 5  # in seconds
+  max_retries: 3
+
+region:
+  boundaries:
+    - x_min: 0
+      x_max: 5000
+      y_min: 0
+      y_max: 5000
+  environmental_factors:
+    terrain: flat
+    obstacles: none
