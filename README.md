@@ -74,7 +74,3 @@ python src/controller.py
 
 ---
 
-```
-
-Would you like me to also make a **flow diagram (in Markdown/ASCII or as a PNG)** showing how the **handover system works** (operator → central system → operator), so you can include it in the repo?
-```
